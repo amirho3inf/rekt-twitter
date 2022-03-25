@@ -1,0 +1,17 @@
+users
+username                true    CHAR(32)
+password                false   CHAR(64)
+joined_at               false   TIMESTAMP
+
+tweets
+user_id                 false   INTEGER
+user_username           false   CHAR(32)
+text                    false   CHAR(512)
+posted_at               false   TIMESTAMP
+retweet_id              false   INTEGER
+retweet_from_username   false   CHAR(32)
+likes                   false   INTEGER
+
+tweet_likes
+tweet_id                false   INTEGER
+user_id                 false   INTEGER

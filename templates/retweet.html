@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}This is an example page{% endblock %}
+
+
+{% block content %}
+<script>
+    var answer = window.confirm("Are you sure wanna retweet this?\n\n{{tweet['text']}}");
+    if (answer) {
+        window.location.replace("/retweet_confirm/{{tweet['id']}}");
+    }
+    else {
+        window.location.replace("/");
+    }
+</script>
+{% endblock %}

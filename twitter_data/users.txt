@@ -1,0 +1,4 @@
+"id" "username" "password" "joined_at"
+"1" "JackDorsey" "123" "2022-03-24 23:38:09"
+"2" "MrSoloDolo" "123" "2022-03-24 23:41:59"
+"3" "Jafar" "123" "2022-03-24 23:43:32"

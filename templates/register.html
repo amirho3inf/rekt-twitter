@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Tweets{% endblock %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<div class="col-lg-6 offset-lg-3 text-center alert alert-{{ messages.0.0 }} alert-dismissible fade show" role="alert">
+    {% for category, message in messages %}
+    {{ message }} </br>
+    {% endfor %}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endif %}
+{% endwith %}
+
+<div class="d-flex justify-content-center">
+    <form action="/register" method="POST">
+        <div class="mb-3">
+            <label for="usernameField" class="form-label">Username</label>
+            <input name="username" type="text" class="form-control" id="usernameField" required>
+        </div>
+        <div class="mb-3">
+            <label for="passwordField" class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" id="passwordField" required>
+        </div>
+        <button type="submit" class="btn btn-primary d-block w-100 mt-4">
+            Register
+        </button>
+        <a class="btn btn-secondary d-block w-100 mt-2 mb-4" href="/login" role="button">
+            Login
+        </a>
+    </form>
+</div>
+{% endblock %}

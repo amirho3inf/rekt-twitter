@@ -1,0 +1,6 @@
+"id" "user_id" "user_username" "text" "posted_at" "retweet_id" "retweet_from_username" "likes"
+"1" "1" "JackDorsey" "This shit is craZzy! I feel more secure here than on Twitter." "2022-03-24 23:39:22" "0" "" "3"
+"2" "1" "JackDorsey" "I just liked my own tweet, imma like this one after sending also" "2022-03-24 23:40:09" "0" "" "3"
+"3" "1" "JackDorsey" "I did it! YAS! I\'m incredible *-*" "2022-03-24 23:41:08" "0" "" "3"
+"4" "2" "MrSoloDolo" "Hey! cudi here." "2022-03-24 23:42:43" "0" "" "1"
+"5" "3" "Jafar" "This shit is craZzy! I feel more secure here than on Twitter." "2022-03-24 23:43:46" "1" "JackDorsey" "0"
